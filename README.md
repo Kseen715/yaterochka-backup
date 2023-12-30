@@ -19,6 +19,6 @@ services:
     environment:
       - TOKEN=<yandex app token>
     volumes:
-      - /mnt/d/ydb/yat-db-init:/var/opt/backup_ep
-      - /mnt/d/ydb/yat-db:/var/opt/backup_data
+      - /mnt/d/ydb/yat-db-init:/var/opt/backup_ep    # PostgreSQL entrypoint path
+      - /mnt/d/ydb/yat-db:/var/opt/backup_data       # PostgreSQL data path
 ```
